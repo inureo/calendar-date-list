@@ -1,0 +1,40 @@
+{
+  "name": "calendar-date-list",
+  "version": "1.0.0",
+  "description": "You can get a date list for calendar without external dependency.",
+  "main": "dist/calendar-date-list.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "TZ=UTC jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inureo/calendar-date-list.git"
+  },
+  "keywords": [
+    "library",
+    "es6",
+    "calendar",
+    "date"
+  ],
+  "author": "Ryo Tezuka",
+  "bugs": {
+    "url": "https://github.com/inureo/calendar-date-list/issues"
+  },
+  "homepage": "https://github.com/inureo/calendar-date-list",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-uglify": "^6.0.1"
+  }
+}
