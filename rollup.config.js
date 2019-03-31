@@ -4,10 +4,10 @@ import pkg from './package.json';
 
 export default [
   {
-    input: 'src/calendar.js',
+    input: 'src/calendar-date-list.js',
     output: {
       name: 'calendar-date-list',
-      file: 'dist/calendar.js',
+      file: 'dist/calendar-date-list.js',
       format: 'umd',
       exports: 'default',
       banner: `/* ${pkg.name} v${pkg.version}, @license MIT */`

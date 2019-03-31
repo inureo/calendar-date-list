@@ -4,7 +4,7 @@ import {
   reindexDayOfWeek
 } from './util'
 
-export default class Calendar {
+export default class CalendarDateList {
   constructor(firstWeekDay = 0) {
     if (typeof firstWeekDay !== 'number') {
       throw new Error('firstWeekDay must be a number')
