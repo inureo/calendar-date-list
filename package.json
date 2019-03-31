@@ -1,6 +1,6 @@
 {
   "name": "calendar-date-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "You can get a date list for calendar without external dependency.",
   "main": "dist/calendar-date-list.js",
   "license": "MIT",
