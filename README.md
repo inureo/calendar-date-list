@@ -1,5 +1,7 @@
 # calendar-date-list
 
+[![Build Status](https://travis-ci.com/inureo/calendar-date-list.svg?branch=master)](https://travis-ci.com/inureo/calendar-date-list)
+
 You can get a date list for calendar without external dependency.
 
 ## Getting Started
