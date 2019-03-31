@@ -1,4 +1,4 @@
-import Calendar from '../src/calendar'
+import CalendarDateList from '../src/calendar-date-list'
 
 import {
   calendar4Week,
@@ -12,21 +12,21 @@ import {
 describe('Calendar', () => {
   describe('constructor()', () => {
     it('should be throw Error if other than numbers', () => {
-      expect(() => new Calendar('string')).toThrow('firstWeekDay must be a number')
-      expect(() => new Calendar('string')).toThrow(Error)
+      expect(() => new CalendarDateList('string')).toThrow('firstWeekDay must be a number')
+      expect(() => new CalendarDateList('string')).toThrow(Error)
     })
 
     it('should be return Calendar Instance if argument empty', () => {
-      expect(new Calendar()).toBeInstanceOf(Calendar)
+      expect(new CalendarDateList()).toBeInstanceOf(CalendarDateList)
     })
 
     it('should be return Calendar Instance if argument number', () => {
-      expect(new Calendar(1)).toBeInstanceOf(Calendar)
+      expect(new CalendarDateList(1)).toBeInstanceOf(CalendarDateList)
     })
   })
 
   describe('getDates()', () => {
-    const sundayBeginningCalendar = new Calendar()
+    const sundayBeginningCalendar = new CalendarDateList()
     it('should be return 4 week calendar', () => {
       expect(sundayBeginningCalendar.getDates(2015, 1)).toEqual(calendar4Week)
     })
