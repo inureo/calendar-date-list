@@ -1,10 +1,5 @@
 version: 2.1
 
-executors:
-  frontend-executor:
-    docker:
-      - image: cimg/node:18.16.1
-
 commands:
   setup-node-modules:
     description: "Restore node_modules"
@@ -24,22 +19,22 @@ commands:
 
 jobs:
   run-test:
-    executor: frontend-executor
+    docker:
+      - image: cimg/node:18.16.1
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
-      - setup-node-modules:
+      - setup-node-modules
       - run:
           name: Run test
           command: yarn test
   run-build:
-    executor: frontend-executor
+    docker:
+      - image: cimg/node:18.16.1
     steps:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
-      - setup-node-modules:
+      - setup-node-modules
       - run:
           name: Run test
           command: yarn test
