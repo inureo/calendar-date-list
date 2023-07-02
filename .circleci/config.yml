@@ -32,8 +32,7 @@ jobs:
       - setup-node-modules:
       - run:
           name: Run test
-          command:
-            - yarn test
+          command: yarn test
   run-build:
     executor: frontend-executor
     steps:
@@ -43,11 +42,8 @@ jobs:
       - setup-node-modules:
       - run:
           name: Run test
-          command:
-            - yarn test
+          command: yarn test
 
-# Orchestrate jobs using workflows
-# See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
   run-test-workflow:
     jobs:
