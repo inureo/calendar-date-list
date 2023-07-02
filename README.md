@@ -1,6 +1,4 @@
-# calendar-date-list
-
-[![Build Status](https://travis-ci.com/inureo/calendar-date-list.svg?branch=master)](https://travis-ci.com/inureo/calendar-date-list)
+# calendar-date-list &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE) [![npm version](https://img.shields.io/npm/v/calendar-date-list.svg?style=flat)](https://www.npmjs.com/package/calendar-date-list) [![CircleCI Status](https://circleci.com/gh/inureo/calendar-date-list.svg?style=shield)](https://circleci.com/gh/inureo/calendar-date-list)
 
 You can get a date list for calendar without external dependency.
 
